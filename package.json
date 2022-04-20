@@ -1,0 +1,37 @@
+{
+  "name": "voco-chat-server",
+  "version": "1.0.0",
+  "description": "Voco Chat Server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --pretty --transpile-only src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunterpartel/voco-chat-server.git"
+  },
+  "author": "Künter Pärtel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kunterpartel/voco-chat-server/issues"
+  },
+  "homepage": "https://github.com/kunterpartel/voco-chat-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.8",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "pino": "^7.8.0",
+    "pino-pretty": "^7.5.3",
+    "ws": "^8.5.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.1",
+    "@types/ws": "^8.5.3",
+    "jest": "^27.5.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.2"
+  }
+}
