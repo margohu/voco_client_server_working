@@ -5,16 +5,13 @@ export enum SocketType {
     CONNECTION = 'connection',
     MESSAGE = 'message'
 }
-
 export interface Chat {
     username: string;
     date: string;
     message: string;
 }
-
 export default function socket({ wss }: { wss: WebSocketServer }) {
     logger.info(`Sockets enabled`);
-
     wss.on(SocketType.CONNECTION, (ws: WebSocket) => {
         ws.on(SocketType.MESSAGE, (message: string) => {
             const data = JSON.parse(message) as Chat;
